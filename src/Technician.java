@@ -4,6 +4,7 @@ public class Technician extends Employee {
 	public int salary;
 	public int bonus;
 	public int workHours;
+	public int numberOfworkers;
 	
 	public Technician(String id, String name, String adress, GenderType gender, TypeOfProfession professionType,
 			int salary, int bonus, int workHours) {
@@ -11,6 +12,7 @@ public class Technician extends Employee {
 		this.salary = salary;
 		this.bonus = 0;
 		this.workHours = 5;
+		this.numberOfworkers=0;
 	}
 
 	public int getSalary() {
@@ -29,6 +31,8 @@ public class Technician extends Employee {
 	}
 
 
-
+	public int getNoofTechnicians() {
+		return numberOfworkers;
+	}
 	
 }
